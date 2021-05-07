@@ -4,11 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
-    <title>Final Project</title>
+    <title>Life, Love, Light</title>
 </head>
 <body>
-    <h1>Home Page</h1>
-    <p>This will be the final project.</p>
+    <header>
+        <img class="heart" src="/img/heart.svg" alt="Love Conquers All">
+        <nav class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </nav>
+    </header>
+        <!-- <img src="/img/audio.svg" data-state="play"/>
+        <audio src="/media/music.mp3" preload>
+            Your browser does not support the <code>audio</code> tag
+        </audio> -->
+
+        <h1 id="myElement">Life, Love, Light</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+      new TypeIt('#myElement',{
+          speed: 333,
+          loop: true
+      })
+      .go();
+    </script>
+    
+    <p class="poem">
+        The Path You Cross is Meant to Be
+        <br>
+        When You <i>Love</i> You Are Free
+        <br> 
+        Trust Your Heart and Embrace the Beauty
+        <br>  
+        <i>Life</i> is an Art and You’re Here to Take Part 
+        <br>  
+        Follow the Light With All Your Might 
+        <br>   
+        There’s No Need to Fight
+    </p>
+    <h2 class="final">WE ARE ALL ONE BRIGHT <span style="color: #f7f700">LIGHT</span></h2>
+    
+    <h3 id="signature">By Jesse Hernandez</h3>
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+      new TypeIt('#signature',{
+          speed: 333
+      })
+      .go();
+    </script>
+
+    <footer>
+        <!-- <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a> -->
+    </footer>
 </body>
 </html>
