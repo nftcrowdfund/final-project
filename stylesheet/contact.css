@@ -1,1 +1,41 @@
 @import url("./style.css");
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif, bold;
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+input {
+    font-family: 'Antic Didone', serif;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    border: 2px solid #7967e7;
+    border-radius: 12px;
+    background-color: #eeedfc;
+}
+
+input[type=text] {
+    height: 125px;
+}
+
+input[type=submit] {
+    background-color: #4c9a7a;
+    color: white;
+    border: 3px solid #ffffff;
+    transition-duration: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type=submit]:hover {
+    background-color: #7967e7;
+    color: white;
+}
+
+input:focus {
+    background-color: #ffffff;
+}

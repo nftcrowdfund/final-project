@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <title>Life, Love, Light</title>
+    <script src="/js/app.js"></script>
 </head>
 <body>
     <header>
@@ -17,27 +18,42 @@
             <li><a href="./contact.html">Contact</a></li>
         </nav>
     </header>
-        <!-- <img src="/img/audio.svg" data-state="play"/>
-        <audio src="/media/music.mp3" preload>
-            Your browser does not support the <code>audio</code> tag
-        </audio> -->
+
+        <div>
+            <audio id="audio" src="/media/love.mp3" preload="auto"></audio>
+            <button id="toggle"></button>
+        </div>
+        <script>
+            var toggleBtn = document.getElementById('toggle');
+
+            var playSound = function() {
+            if (audio.paused == false) {
+            audio.pause();
+            } else {
+            audio.play();
+        }
+    };
+
+        toggleBtn.addEventListener('click', playSound, false);
+
+        </script>
 
         <h1 id="myElement">Life, Love, Light</h1>
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
       new TypeIt('#myElement',{
-          speed: 333,
-          loop: true
+          speed: 420,
+          afterComplete: function (step, instance) {
+            instance.destroy();
+  }
       })
       .go();
     </script>
-    
+
     <p class="poem">
-        The Path You Cross is Meant to Be
-        <br>
-        When You <i>Love</i> You Are Free
-        <br> 
+        The Path You Cross is Meant to Be<br>
+        When You <i>Love</i> You Are Free<br> 
         Trust Your Heart and Embrace the Beauty
         <br>  
         <i>Life</i> is an Art and You’re Here to Take Part 
@@ -45,22 +61,26 @@
         Follow the Light With All Your Might 
         <br>   
         There’s No Need to Fight
+        <br>
+        We Are All <span style="color: #ffffff">One Bright Light</span>
     </p>
-    <h2 class="final">WE ARE ALL ONE BRIGHT <span style="color: #f7f700">LIGHT</span></h2>
+   
     
     <h3 id="signature">By Jesse Hernandez</h3>
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
       new TypeIt('#signature',{
-          speed: 333
+          speed: 133,
+          afterComplete: function (step, instance) {
+            instance.destroy();
+  }
       })
       .go();
     </script>
 
     <footer>
-        <!-- <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a> -->
+       <p class="footer">Music created by <a href="https://www.fiverr.com/davinchi_beatz/compose-original-intro-music-for-your-podcast-or-video">davinchi_beatz</a></p>
     </footer>
 </body>
 </html>

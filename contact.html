@@ -17,6 +17,30 @@
             <li><a href="./contact.html">Contact</a></li>
         </nav>
     </header>
-    <h1>Contact</h1>
+    <h1>Contact Us</h1>
+    <form id="myForm" action="#" type="POST">
+        <input
+          type="email"
+          name="email-address"
+          placeholder="What's your email?"
+        />
+        <br>
+        <input type="text" name="story" placeholder="What's your story?" />
+        <br>
+        <input type="submit" value="Share Your Story" id="Form-submit" />
+      </form>
+    <div class="commentbox"></div>
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>
+    commentBox('5763792633856000', {
+        // backgroundColor: '#000',
+        sortOrder: 'best',
+        textColor: '#000',
+        subtextColor: '#000'
+    });
+    </script>
+    <footer>
+        <p class="footer">Music created by <a href="https://www.fiverr.com/davinchi_beatz/compose-original-intro-music-for-your-podcast-or-video">davinchi_beatz</a></p>
+     </footer> 
 </body>
 </html>
