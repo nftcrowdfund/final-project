@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <center><img class="heart" src="/img/heart.svg" alt="Love Conquers All"></center>
+        <nav class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <h1>Gallery</h1>
+        <audio id="audio" src="/media/love.mp3" preload="auto"></audio>
+        <button id="toggle"></button>
+    <script>
+        var toggleBtn = document.getElementById('toggle');
+
+        var playSound = function() {
+        if (audio.paused == false) {
+        audio.pause();
+        } else {
+        audio.play();
+    }
+};
+
+    toggleBtn.addEventListener('click', playSound, false);
+
+    </script>
+    <div class="gallery cf">
+        <div>
+          <img src="img/cross0.jpg"/>
+        </div>
+        <div>
+          <img src="img/cross1.jpeg"/>
+        </div>
+        <div>
+          <img src="img/cross2.jpeg"/>
+        </div>
+        <div>
+          <img src="img/mt-ada-entrance.jpeg"/>
+        </div>
+        <div>
+          <img src="img/sharkharbor.jpeg"/>
+        </div>
+        <div>
+          <img src="img/kiss.jpeg"/>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
+
+
+.heart {
+    background-image: url(/img/heart.svg);
+    background-repeat: no-repeat;
+    height: auto;
+	max-width: 8%;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif, bold;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.navbar li{
+    display:inline;
+}
+.navbar a{
+    display:inline-block;
+    padding:10px;
+}
+
+.navbar a:hover {
+    color: #31addd;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif, bold;
+    font-size: 37px;
+    line-height: 1.7;
+}
+
+#toggle {
+    background-image: url(/img/audio.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:#ffdf99;background-image:  
+radial-gradient(at 50% 50%, hsla(271,0%,100%,1) 0, transparent 33%),  
+radial-gradient(at 90% 70%, hsla(152,43%,42%,1) 0, transparent 44%),  
+radial-gradient(at 93% 26%, hsla(249,73%,60%,1) 0, transparent 49%),  
+radial-gradient(at 77% 80%, hsla(290,88%,73%,1) 0, transparent 38%),  
+radial-gradient(at 31% 82%, hsla(262,65%,68%,1) 0, transparent 30%),  
+radial-gradient(at 0% 59%, hsla(161,60%,74%,1) 0, transparent 38%),  
+radial-gradient(at 24% 82%, hsla(246,65%,68%,1) 0, transparent 51%);
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.8,1.8);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 24px;
+  text-align: center;
+}
