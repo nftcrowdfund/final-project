@@ -20,8 +20,8 @@
     </header>
 
         <div>
-            <audio id="audio" src="/media/love.mp3" preload="auto"></audio>
-            <button id="toggle"></button>
+            <audio id="audio" src="/media/love.mp3" preload="auto" autoplay></audio>
+            <!-- <button id="toggle"></button>
         </div>
         <script>
             var toggleBtn = document.getElementById('toggle');
@@ -36,7 +36,7 @@
 
         toggleBtn.addEventListener('click', playSound, false);
 
-        </script>
+        </script> -->
 
         <h1 id="myElement">Life, Love, Light</h1>
 
@@ -51,7 +51,7 @@
       .go();
     </script>
 
-    <p class="poem">
+    <p class="poem" id="poem">
         The Path You Cross is Meant to Be<br>
         When You <i>Love</i> You Are Free<br> 
         Trust Your Heart and Embrace the Beauty
@@ -65,13 +65,25 @@
         We Are All <span style="color: #ffffff">One Bright Light</span>
     </p>
    
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+      new TypeIt('#poem',{
+          speed: 160,
+//         //   afterComplete: function (step, instance) {
+//         //     instance.destroy();
+//   }
+      })
+      .go();
+    </script>
+
+
     
     <h3 id="signature">By Jesse Hernandez</h3>
 
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
       new TypeIt('#signature',{
-          speed: 133,
+          speed: 3330,
           afterComplete: function (step, instance) {
             instance.destroy();
   }

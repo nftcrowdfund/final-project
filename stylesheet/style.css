@@ -84,7 +84,8 @@ radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 33%);
   } */
 
   body {
-    height: 100%;
+    height: auto;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image:#ffdf99;background-image:  

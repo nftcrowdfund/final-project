@@ -1,6 +1,6 @@
 @import url("./style.css");
 
-#intro {
+.intro {
     line-height: 2.1;
     font-family: 'Antic Didone', serif;
     font-size: 21px;
