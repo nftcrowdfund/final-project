@@ -19,11 +19,12 @@
         </nav>
     </header>
     <h1>Contact Us</h1>
-    <form id="myForm" action="#" type="POST">
+    <form id="myForm">
         <input
           type="email"
           name="email-address"
           placeholder="What's your email?"
+          required
         />
         <br>
         <input type="text" name="story" placeholder="What's your story?" />
@@ -43,5 +44,23 @@
     <footer>
         <p class="footer">Music created by <a href="https://www.fiverr.com/davinchi_beatz/compose-original-intro-music-for-your-podcast-or-video">davinchi_beatz</a></p>
      </footer> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+     <script>
+     // POST form data to zapier on submit
+$("#myForm").submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    url: "https://hooks.zapier.com/hooks/catch/8702448/bych3yd/",
+    type: "post",
+    data: $("#myForm").serialize(),
+    success: function() {
+      // Redirect to another success page
+      window.location = "http://google.com";
+    }
+  });
+});
+</script>
+
 </body>
 </html>

@@ -37,7 +37,7 @@
 h1 {
     font-family: 'Julius Sans One', sans-serif, bold;
     font-size: 37px;
-    line-height: 1.7;
+    line-height: 0.3;
 }
 
 #toggle {
@@ -78,14 +78,15 @@ radial-gradient(at 24% 82%, hsla(246,65%,68%,1) 0, transparent 51%);
   width: 640px;
   margin: 0 auto;
   padding: 5px;
-  background: #fff;
+  background: #f0eefc;
   box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  margin-bottom: -1000;
 }
 
 .gallery > div {
   position: relative;
   float: left;
-  padding: 5px;
+  padding: 3px;
 }
 
 .gallery > div > img {
@@ -99,7 +100,7 @@ radial-gradient(at 24% 82%, hsla(246,65%,68%,1) 0, transparent 51%);
 }
 
 .gallery > div:hover > img {
-  transform: scale(1.8,1.8);
+  transform: scale(1.9,1.9);
   transition: .3s transform;
 }
 
